@@ -4,139 +4,140 @@
 <h1>CV PEHTEREV</h1>
 <p>
     
-  1. Hello, my name is **Dmitry Pehterev**.
-2. My cellphone 292817482 _(plus viber, telegram, WhatsApp account on this number)_, e-mail kelgreem@mail.ru.
-3. I want to learn and improve in the kotlin lang, which was in the tone of my brain, and also implement my ideas on Android.
-4. Now I know the basics: Pascal and Delphi, c++, c#, java, HTML, JS.
-5. 
+  1. Hello, my name is Dmitry Pehterev.<br>
+2. My cellphone 292817482 (plus viber, telegram, WhatsApp account on this number), e-mail kelgreem@mail.ru.<br>
+3. I want to learn and improve in the kotlin lang, which was in the tone of my brain, and also implement my ideas on Android.<br>
+4. Now I know the basics: Pascal and Delphi, c++, c#, java, HTML, JS.<br>
+5. <br>
 
-    //(JS code)  
+    //(JS code)  <br>
     
-    // this function will animate the virtual pendulum when it is hit by a bullet
+    // this function will animate the virtual pendulum when it is hit by a bullet<br>
 
-    function animation(args) { 
+    function animation(args) { <br>
 
-	var $ = {
-		radius  :     250 
-	}
+	var $ = {<br>
+		radius  :     250 <br>
+	}<br>
     
-    krug=false;
-	f = 0;
-	s = 2 * Math.PI / 180; 
+    krug=false;<br>
+	f = 0;<br>
+	s = 2 * Math.PI / 180; <br>
             
             
-           var p1 = document.getElementById('u0_pul');
+           var p1 = document.getElementById('u0_pul');<br>
            
-    var u0_a = p1.value;
-    u0_a = Number(u0_a);        
-            var p2 = document.getElementById('m_pul');
-    var  m_pul = p2.value;
-    m_pul = Number(m_pul);
-            var p3 = document.getElementById('M2_pul');
-    var   M2_pul = p3.value;
-    M2_pul = Number(M2_pul);
-            var p4 = document.getElementById('l_pul');
-    var   l_pul = p4.value;
-    l_pul = Number(l_pul);
+    var u0_a = p1.value;<br>
+    u0_a = Number(u0_a);    <br>    
+            var p2 = document.getElementById('m_pul');<br>
+    var  m_pul = p2.value;<br>
+    m_pul = Number(m_pul);<br>
+            var p3 = document.getElementById('M2_pul');<br>
+    var   M2_pul = p3.value;<br>
+    M2_pul = Number(M2_pul);<br>
+            var p4 = document.getElementById('l_pul');<br>
+    var   l_pul = p4.value;<br>
+    l_pul = Number(l_pul);<br>
                      
-    v0_min = ((M2_pul+m_pul)*Math.sqrt(4*g*l_pul))/m_pul;
+    v0_min = ((M2_pul+m_pul)*Math.sqrt(4*g*l_pul))/m_pul;<br>
                   
-    v0_mayat_pul = (m_pul*u0_a)/(m_pul+M2_pul);  
-    u0_mayat_pul = (1/v0_mayat_pul)*1000;
+    v0_mayat_pul = (m_pul*u0_a)/(m_pul+M2_pul);  <br>
+    u0_mayat_pul = (1/v0_mayat_pul)*1000;<br>
             
-    h_max =  Math.pow(v0_mayat_pul, 2)/(2*g);
+    h_max =  Math.pow(v0_mayat_pul, 2)/(2*g);<br>
     
             
-     if (h_max > l_pul*2)  {       
+     if (h_max > l_pul*2)  {       <br>
     
-     krug=true;
+     krug=true;<br>
   
-     }  
+     }  <br>
             
-     pul_for_p_3(h_max, v0_min, v0_mayat_pul, l_pul*2); 
+     pul_for_p_3(h_max, v0_min, v0_mayat_pul, l_pul*2); <br>
                             
      
-     let   setIntervalID;        
-	 setIntervalID = setInterval(function() {  
+     let   setIntervalID;    <br>    
+	 setIntervalID = setInterval(function() {  <br>
        
-		f += s; 
-        rez_v_cel = f * (180/Math.PI);
+		f += s; <br>
+        rez_v_cel = f * (180/Math.PI);<br>
         
-         h_tek = 2*l_pul*Math.pow(Math.sin(f/2), 2);
-         d_tek = Math.sqrt( Math.pow(l_pul, 2)-Math.pow(l_pul-h_tek, 2)  );         
+         h_tek = 2*l_pul*Math.pow(Math.sin(f/2), 2);<br>
+         d_tek = Math.sqrt( Math.pow(l_pul, 2)-Math.pow(l_pul-h_tek, 2)  );<br>         
 
-         pul_for_p(h_tek, d_tek, rez_v_cel);
+         pul_for_p(h_tek, d_tek, rez_v_cel);<br>
  
-          document.getElementById("timg1").style.transform = "rotate(" + -rez_v_cel + "deg)";
+          document.getElementById("timg1").style.transform = "rotate(" + -rez_v_cel + "deg)";<br>
          
-		  elem.style.left =  235 + $.radius * Math.sin(f)  + 'px';
-		  elem.style.top =   235 + $.radius * Math.cos(f) + 'px';   
+		  elem.style.left =  235 + $.radius * Math.sin(f)  + 'px';<br>
+		  elem.style.top =   235 + $.radius * Math.cos(f) + 'px';  <br> 
              
-          r3.style.left = 235 + $.radius * Math.sin(f)  + 'px';
-          r3.style.top = 235 + $.radius * Math.cos(f) + 10 + 'px';
-          document.getElementById("pul").style.transform = "rotate(" + -rez_v_cel + "deg)"; 
+          r3.style.left = 235 + $.radius * Math.sin(f)  + 'px';<br>
+          r3.style.top = 235 + $.radius * Math.cos(f) + 10 + 'px';<br>
+          document.getElementById("pul").style.transform = "rotate(" + -rez_v_cel + "deg)"; <br>
          
-          r4.style.left = 235 + $.radius * Math.sin(f)  + 10 +'px';
-          r4.style.top = 235 + $.radius * Math.cos(f) + 5+ 'px';
-          document.getElementById("im_dot").style.transform = "rotate(" + -rez_v_cel + "deg)"; 
+          r4.style.left = 235 + $.radius * Math.sin(f)  + 10 +'px';<br>
+          r4.style.top = 235 + $.radius * Math.cos(f) + 5+ 'px';<br>
+          document.getElementById("im_dot").style.transform = "rotate(" + -rez_v_cel + "deg)"; <br>
     
-    ttt++;    
-      if (krug == true) {
-        if (ttt>179) {
-       clearInterval(setIntervalID); 
-       elem.style.left = 229;
-       elem.style.top = 484.84;
-            but1.disabled = false;
-            but2.disabled = false;
-            but3.disabled = false;
-        } 
-      }  else {
-       if ( h_tek>=h_max) {
+    ttt++;    <br>
+      if (krug == true) {<br>
+        if (ttt>179) {<br>
+       clearInterval(setIntervalID); <br>
+       elem.style.left = 229;<br>
+       elem.style.top = 484.84;<br>
+            but1.disabled = false;<br>
+            but2.disabled = false;<br>
+            but3.disabled = false;<br>
+        } <br>
+      }  else {<br>
+       if ( h_tek>=h_max) {<br>
 
            
-           (function() {
+           (function() {<br>
 
-    if (0 < f) {
+    if (0 < f) { <br>
 
 
-        f -= s;
-        rez_v_cel = f * (180/Math.PI);
+        f -= s;<br>
+        rez_v_cel = f * (180/Math.PI);<br>
         
         
-        document.getElementById("timg1").style.transform = "rotate(" + -rez_v_cel + "deg)";
-        elem.style.left =  235 + $.radius * Math.sin(f) - 5  +'px';
-		  elem.style.top =   235 + $.radius * Math.cos(f) +'px';   
+        document.getElementById("timg1").style.transform = "rotate(" + -rez_v_cel + "deg)";<br>
+        elem.style.left =  235 + $.radius * Math.sin(f) - 5  +'px';<br>
+		  elem.style.top =   235 + $.radius * Math.cos(f) +'px';   <br>
              
-          r3.style.left = 235 + $.radius * Math.sin(f) - 5 + 'px';
-          r3.style.top = 235 + $.radius * Math.cos(f) + 10 + 'px';
-          document.getElementById("pul").style.transform = "rotate(" + -rez_v_cel + "deg)";
+          r3.style.left = 235 + $.radius * Math.sin(f) - 5 + 'px';<br>
+          r3.style.top = 235 + $.radius * Math.cos(f) + 10 + 'px';<br>
+          document.getElementById("pul").style.transform = "rotate(" + -rez_v_cel + "deg)";<br>
         
         
-        setTimeout(arguments.callee, u0_mayat_pul);
+        setTimeout(arguments.callee, u0_mayat_pul);<br>
 
-    } else {
+    } else {<br>
 
-          but1.disabled = false;
-          but2.disabled = false;
-          but3.disabled = false; 
+          but1.disabled = false;<br>
+          but2.disabled = false;<br>
+          but3.disabled = false; <br>
 
-    }
-    })();
-          clearInterval(setIntervalID);
-        }     
+    }<br>
+    })();<br>
+          clearInterval(setIntervalID);<br>
+        }     <br>
                 
-      } 
+      } <br>
             
-	}, u0_mayat_pul)
+	}, u0_mayat_pul)<br>
                   
-    }  
+    }  <br>
 
-6. Nothing...
-7. Nothing  too...
-8. School, university. _(I understand that this is not enough)_
+6. Nothing...<br>
+7. Nothing  too...<br>
+8. School, university. _(I understand that this is not enough)_<br>
     
     
     
     </p>
 </body>
 </html>
+
